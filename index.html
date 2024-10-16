@@ -12,17 +12,19 @@
         box-sizing: border-box;
       }
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Montserrat", sans-serif;
         line-height: 1.6;
         color: #333;
+        background-color: #f9f9f9;
       }
       /* Header styles */
       header {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(255, 255, 255, 0.95);
         position: fixed;
         width: 100%;
         z-index: 1000;
         padding: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       }
       nav {
         display: flex;
@@ -32,25 +34,30 @@
         margin: 0 auto;
       }
       .logo {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: bold;
-        color: #4a4a4a;
+        color: #2c3e50;
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
       .nav-links {
         display: flex;
         list-style: none;
       }
       .nav-links li {
-        margin-left: 1.5rem;
+        margin-left: 2rem;
       }
       .nav-links a {
         text-decoration: none;
-        color: #4a4a4a;
-        font-weight: bold;
+        color: #2c3e50;
+        font-weight: 500;
         transition: color 0.3s ease;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
       }
       .nav-links a:hover {
-        color: #007bff;
+        color: #3498db;
       }
       /* Mobile menu styles */
       .menu-toggle {
@@ -61,14 +68,14 @@
       .menu-toggle span {
         width: 25px;
         height: 3px;
-        background-color: #4a4a4a;
+        background-color: #2c3e50;
         margin: 2px 0;
         transition: 0.4s;
       }
       /* Hero section styles */
       .hero {
         height: 100vh;
-        background-image: url("https://via.placeholder.com/1920x1080.png?text=Viajeros+meditando+junto+a+una+cascada+en+Bali");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./cover.jpg");
         background-size: cover;
         background-position: center;
         display: flex;
@@ -78,87 +85,124 @@
         color: white;
       }
       .hero-content {
-        background-color: rgba(0, 0, 0, 0.6);
+        max-width: 800px;
         padding: 2rem;
-        border-radius: 10px;
       }
       .hero h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
         margin-bottom: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 700;
       }
       .hero p {
         font-size: 1.5rem;
         margin-bottom: 2rem;
+        font-weight: 300;
       }
       .cta-button {
         display: inline-block;
-        padding: 0.8rem 1.5rem;
-        background-color: #007bff;
+        padding: 1rem 2rem;
+        background-color: #3498db;
         color: white;
         text-decoration: none;
-        border-radius: 5px;
+        border-radius: 50px;
         font-weight: bold;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.9rem;
       }
       .cta-button:hover {
-        background-color: #0056b3;
+        background-color: #2980b9;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       }
       /* Section styles */
       section {
-        padding: 4rem 2rem;
+        padding: 6rem 2rem;
       }
       .section-title {
         text-align: center;
-        font-size: 2rem;
-        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+        color: #2c3e50;
+        text-transform: uppercase;
+        letter-spacing: 2px;
       }
       /* Viajes section */
       .viajes-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 2rem;
       }
       .viaje-card {
-        background-color: #f8f9fa;
-        border-radius: 10px;
+        background-color: #fff;
+        border-radius: 15px;
         overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      .viaje-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
       }
       .viaje-card img {
         width: 100%;
-        height: 200px;
+        height: 250px;
         object-fit: cover;
       }
       .viaje-card-content {
-        padding: 1rem;
+        padding: 1.5rem;
       }
       .viaje-card h3 {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+        color: #2c3e50;
+      }
+      .viaje-card p {
+        margin-bottom: 1.5rem;
+        color: #7f8c8d;
       }
       /* Filter styles */
       .filter-container {
         display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
       .filter-button {
         margin: 0 0.5rem;
-        padding: 0.5rem 1rem;
-        background-color: #f8f9fa;
+        padding: 0.8rem 1.5rem;
+        background-color: #ecf0f1;
         border: none;
-        border-radius: 5px;
+        border-radius: 50px;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: all 0.3s ease;
+        font-weight: 500;
+        color: #2c3e50;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+      }
+      .filter-button:hover {
+        background-color: #3498db;
+        color: white;
       }
       .filter-button.active {
-        background-color: #007bff;
+        background-color: #3498db;
         color: white;
       }
       /* About Us section */
       .about-us {
-        background-color: #f8f9fa;
-        padding: 4rem 2rem;
+        background-color: #ecf0f1;
+        padding: 6rem 2rem;
         text-align: center;
+      }
+      .about-us p {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.1rem;
+        color: #34495e;
       }
       /* Blog section */
       .blog-posts {
@@ -168,9 +212,14 @@
       }
       .blog-post {
         background-color: #fff;
-        border-radius: 10px;
+        border-radius: 15px;
         overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      .blog-post:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
       }
       .blog-post img {
         width: 100%;
@@ -178,7 +227,16 @@
         object-fit: cover;
       }
       .blog-post-content {
-        padding: 1rem;
+        padding: 1.5rem;
+      }
+      .blog-post h3 {
+        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+        color: #2c3e50;
+      }
+      .blog-post p {
+        margin-bottom: 1.5rem;
+        color: #7f8c8d;
       }
       /* Workshops section */
       .workshops-list {
@@ -187,10 +245,24 @@
         gap: 2rem;
       }
       .workshop-card {
-        background-color: #f8f9fa;
-        border-radius: 10px;
-        padding: 1rem;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 1.5rem;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+      }
+      .workshop-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+      .workshop-card h3 {
+        margin-bottom: 0.8rem;
+        font-size: 1.3rem;
+        color: #2c3e50;
+      }
+      .workshop-card p {
+        margin-bottom: 1rem;
+        color: #7f8c8d;
       }
       /* Contact section */
       .contact-form {
@@ -200,10 +272,14 @@
       .contact-form input,
       .contact-form textarea {
         width: 100%;
-        padding: 0.5rem;
+        padding: 1rem;
         margin-bottom: 1rem;
-        border: 1px solid #ddd;
+        border: 1px solid #bdc3c7;
         border-radius: 5px;
+        font-family: "Montserrat", sans-serif;
+      }
+      .contact-form textarea {
+        min-height: 150px;
       }
       /* Language toggle */
       .language-toggle {
@@ -211,6 +287,52 @@
         top: 1rem;
         right: 1rem;
         z-index: 1001;
+      }
+      .language-toggle button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+      .language-toggle button:hover {
+        background-color: #2980b9;
+      }
+      /* Modal styles */
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 2000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 600px;
+      }
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
       }
       /* Responsive styles */
       @media (max-width: 768px) {
@@ -221,7 +343,7 @@
           top: 100%;
           left: 0;
           width: 100%;
-          background-color: rgba(255, 255, 255, 0.9);
+          background-color: rgba(255, 255, 255, 0.95);
           padding: 1rem;
         }
         .nav-links.active {
@@ -234,10 +356,16 @@
           display: flex;
         }
         .hero h1 {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
         .hero p {
           font-size: 1.2rem;
+        }
+        .filter-container {
+          flex-wrap: wrap;
+        }
+        .filter-button {
+          margin: 0.5rem;
         }
       }
     </style>
@@ -282,35 +410,47 @@
         </div>
         <div class="viajes-grid">
           <div class="viaje-card" data-destination="bali">
-            <img src="https://via.placeholder.com/400x200.png?text=Bali" alt="Bali" />
+            <video width="100%" controls>
+              <source src="./bali.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div class="viaje-card-content">
               <h3>Mochilear en Bali & Retiro de Mindfulness</h3>
               <p>Explora templos antiguos y practica mindfulness en playas paradisíacas.</p>
-              <a href="#" class="cta-button">Más información</a>
+              <a href="#" class="cta-button more-info" data-trip="bali">Más información</a>
             </div>
           </div>
           <div class="viaje-card" data-destination="india">
-            <img src="https://via.placeholder.com/400x200.png?text=India" alt="India" />
+            <video controls width="100%">
+              <source src="./india.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div class="viaje-card-content">
               <h3>Aventura Espiritual en India</h3>
               <p>Descubre la riqueza cultural y espiritual de la India en un viaje transformador.</p>
-              <a href="#" class="cta-button">Más información</a>
+              <a href="#" class="cta-button more-info" data-trip="india">Más información</a>
             </div>
           </div>
           <div class="viaje-card" data-destination="vietnam">
-            <img src="https://via.placeholder.com/400x200.png?text=Vietnam" alt="Vietnam" />
+            <video controls width="100%">
+              <source src="./vietnam.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div class="viaje-card-content">
               <h3>Explorando Vietnam</h3>
               <p>Sumérgete en la belleza natural y la historia fascinante de Vietnam.</p>
-              <a href="#" class="cta-button">Más información</a>
+              <a href="#" class="cta-button more-info" data-trip="vietnam">Más información</a>
             </div>
           </div>
           <div class="viaje-card" data-destination="azores">
-            <img src="https://via.placeholder.com/400x200.png?text=Azores" alt="Azores" />
+            <video controls width="100%">
+              <source src="./azores.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
             <div class="viaje-card-content">
               <h3>Aventura en las Azores</h3>
               <p>Descubre la belleza natural y la tranquilidad de las islas Azores.</p>
-              <a href="#" class="cta-button">Más información</a>
+              <a href="#" class="cta-button more-info" data-trip="azores">Más información</a>
             </div>
           </div>
         </div>
@@ -370,6 +510,16 @@
         </form>
       </section>
     </main>
+    <!-- Modal -->
+    <div id="tripModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <a href="#" class="cta-button" id="modalCTA">Reservar ahora</a>
+      </div>
+    </div>
+
     <script>
       // Mobile menu toggle
       const menuToggle = document.querySelector(".menu-toggle");
@@ -467,9 +617,94 @@
 
         // Update language toggle button
         langToggle.textContent = currentLang === "es" ? "EN" : "ES";
+        // Language toggle functionality (simplified version)
+        const langToggle = document.getElementById("langToggle");
+        let currentLang = "es";
 
-        // Add more elements to update as needed
+        langToggle.addEventListener("click", () => {
+          currentLang = currentLang === "es" ? "en" : "es";
+          langToggle.textContent = currentLang === "es" ? "EN" : "ES";
+          // Here you would update all the text content on the page
+          // For brevity, we're not including all translations
+          alert(`Idioma cambiado a ${currentLang === "es" ? "Español" : "English"}`);
+        });
       }
+
+      // Modal functionality
+      const modal = document.getElementById("tripModal");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDescription = document.getElementById("modalDescription");
+      const modalCTA = document.getElementById("modalCTA");
+      const closeBtn = document.getElementsByClassName("close")[0];
+
+      const tripData = {
+        bali: {
+          title: "Mochilear en Bali & Retiro de Mindfulness",
+          description:
+            "Únete a nosotros en un viaje transformador a Bali. Explorarás antiguos templos, practicarás yoga y meditación en playas paradisíacas, y te sumergirás en la rica cultura balinesa. Este viaje de 10 días combina aventura, relajación y crecimiento personal.",
+          cta: "Reserva tu viaje a Bali",
+        },
+        india: {
+          title: "Aventura Espiritual en India",
+          description:
+            "Descubre la riqueza cultural y espiritual de la India en este viaje de 14 días. Desde los ghats de Varanasi hasta los palacios de Rajastán, experimentarás la diversidad y la profundidad de este fascinante país.",
+          cta: "Reserva tu viaje a India",
+        },
+        vietnam: {
+          title: "Explorando Vietnam",
+          description:
+            "Sumérgete en la belleza natural y la historia fascinante de Vietnam durante 12 días. Navega por la bahía de Halong, explora las antiguas calles de Hoi An y descubre la vibrante ciudad de Ho Chi Minh.",
+          cta: "Reserva tu viaje a Vietnam",
+        },
+        azores: {
+          title: "Aventura en las Azores",
+          description:
+            "Descubre la belleza natural y la tranquilidad de las islas Azores en este viaje de 8 días. Caminarás por volcanes, te bañarás en aguas termales naturales y explorarás pueblos pintorescos en este paraíso atlántico.",
+          cta: "Reserva tu viaje a las Azores",
+        },
+      };
+
+      // Modal functionality for "Más información" buttons
+      document.querySelectorAll(".more-info").forEach((button) => {
+        button.addEventListener("click", (e) => {
+          e.preventDefault();
+          const trip = button.getAttribute("data-trip");
+          const tripInfo = tripData[trip];
+
+          modalTitle.textContent = tripInfo.title;
+          modalDescription.textContent = tripInfo.description;
+          modalCTA.textContent = tripInfo.cta;
+          modalCTA.href = `#book-${trip}`; // You can set this to an actual booking page
+
+          modal.style.display = "block";
+        });
+      });
+
+      // Close modal when clicking the close button or outside the modal
+      closeBtn.onclick = () => (modal.style.display = "none");
+      window.onclick = (event) => {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      // Workshop registration functionality
+      const workshopButtons = document.querySelectorAll(".workshop-card .cta-button");
+      workshopButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          e.preventDefault();
+          const workshopTitle = e.target.closest(".workshop-card").querySelector("h3").textContent;
+          alert(`Gracias por tu interés en "${workshopTitle}". Te enviaremos un correo electrónico con los detalles de inscripción pronto.`);
+        });
+      });
+
+      // Form submission for contact form
+      const contactForm = document.querySelector(".contact-form");
+      contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.");
+        contactForm.reset();
+      });
     </script>
   </body>
 </html>
