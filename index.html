@@ -369,6 +369,7 @@
         }
       }
     </style>
+    <script src="https://web.celeritytechconsulting.com/form-wrapper.js" defer></script>
   </head>
   <body>
     <header>
@@ -388,9 +389,6 @@
         </div>
       </nav>
     </header>
-    <div class="language-toggle">
-      <button id="langToggle">EN</button>
-    </div>
     <main>
       <section class="hero">
         <div class="hero-content">
@@ -502,12 +500,14 @@
       </section>
       <section id="contacto">
         <h2 class="section-title">Contacto</h2>
-        <form class="contact-form">
-          <input type="text" placeholder="Nombre" required />
-          <input type="email" placeholder="Email" required />
-          <textarea placeholder="Mensaje" rows="5" required></textarea>
-          <button type="submit" class="cta-button">Enviar</button>
-        </form>
+        <form-wrapper data-form-id="Masa Kali contact-bde060">
+          <form class="contact-form">
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Email" required />
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit" class="cta-button">Enviar</button>
+          </form>
+        </form-wrapper>
       </section>
     </main>
     <!-- Modal -->
@@ -567,68 +567,6 @@
           });
         });
       });
-
-      // Language toggle
-      const langToggle = document.getElementById("langToggle");
-      const translations = {
-        es: {
-          viajes: "Viajes",
-          nosotros: "Nosotros",
-          blog: "Blog",
-          talleres: "Talleres",
-          contacto: "Contacto",
-          heroTitle: "Viaja. Crece. Conecta.",
-          heroSubtitle: "Aventuras para el Alma. Mochilear con Propósito.",
-          exploreButton: "Explora nuestros viajes",
-          // Add more translations as needed
-        },
-        en: {
-          viajes: "Trips",
-          nosotros: "About Us",
-          blog: "Blog",
-          talleres: "Workshops",
-          contacto: "Contact",
-          heroTitle: "Travel. Grow. Connect.",
-          heroSubtitle: "Soul Adventures. Backpacking with Purpose.",
-          exploreButton: "Explore our trips",
-          // Add more translations as needed
-        },
-      };
-
-      let currentLang = "es";
-
-      langToggle.addEventListener("click", () => {
-        currentLang = currentLang === "es" ? "en" : "es";
-        updateLanguage();
-      });
-
-      function updateLanguage() {
-        // Update navigation links
-        document.querySelector('a[href="#viajes"]').textContent = translations[currentLang].viajes;
-        document.querySelector('a[href="#nosotros"]').textContent = translations[currentLang].nosotros;
-        document.querySelector('a[href="#blog"]').textContent = translations[currentLang].blog;
-        document.querySelector('a[href="#talleres"]').textContent = translations[currentLang].talleres;
-        document.querySelector('a[href="#contacto"]').textContent = translations[currentLang].contacto;
-
-        // Update hero section
-        document.querySelector(".hero h1").textContent = translations[currentLang].heroTitle;
-        document.querySelector(".hero p").textContent = translations[currentLang].heroSubtitle;
-        document.querySelector(".hero .cta-button").textContent = translations[currentLang].exploreButton;
-
-        // Update language toggle button
-        langToggle.textContent = currentLang === "es" ? "EN" : "ES";
-        // Language toggle functionality (simplified version)
-        const langToggle = document.getElementById("langToggle");
-        let currentLang = "es";
-
-        langToggle.addEventListener("click", () => {
-          currentLang = currentLang === "es" ? "en" : "es";
-          langToggle.textContent = currentLang === "es" ? "EN" : "ES";
-          // Here you would update all the text content on the page
-          // For brevity, we're not including all translations
-          alert(`Idioma cambiado a ${currentLang === "es" ? "Español" : "English"}`);
-        });
-      }
 
       // Modal functionality
       const modal = document.getElementById("tripModal");
