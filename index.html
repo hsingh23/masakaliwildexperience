@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" href="logo.jpg" type="image/jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Masakali Wild Experience</title>
     <style>
@@ -368,6 +369,38 @@
           margin: 0.5rem;
         }
       }
+      .blog-modal {
+        display: none;
+        position: fixed;
+        z-index: 2000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      .blog-modal-content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 15px;
+        width: 80%;
+        max-width: 800px;
+      }
+      .blog-close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .blog-close:hover,
+      .blog-close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
     </style>
     <script src="https://web.celeritytechconsulting.com/form-wrapper.js" defer></script>
   </head>
@@ -406,7 +439,8 @@
           <button class="filter-button" data-filter="bali">Bali</button>
           <button class="filter-button" data-filter="azores">Azores</button>
         </div>
-        <div class="viajes-grid">
+        <!-- <div class="viajes-grid">
+
           <div class="viaje-card" data-destination="bali">
             <video width="100%" controls>
               <source src="./bali.mp4" type="video/mp4" />
@@ -451,8 +485,43 @@
               <a href="#" class="cta-button more-info" data-trip="azores">Más información</a>
             </div>
           </div>
+        </div> -->
+        <div class="viajes-grid">
+          <div class="viaje-card" data-destination="bali">
+            <iframe width="100%" src="https://www.youtube.com/embed/VIDEO_ID_FOR_BALI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="viaje-card-content">
+              <h3>Mochilear en Bali & Retiro de Yoga</h3>
+              <p>Explora templos antiguos y practica mindfulness en playas paradisíacas.</p>
+              <a href="#" class="cta-button more-info" data-trip="bali">Más información</a>
+            </div>
+          </div>
+          <div class="viaje-card" data-destination="india">
+            <iframe width="100%" src="https://www.youtube.com/embed/VIDEO_ID_FOR_INDIA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="viaje-card-content">
+              <h3>Aventura Espiritual en India</h3>
+              <p>Descubre la riqueza cultural y espiritual de la India en un viaje transformador.</p>
+              <a href="#" class="cta-button more-info" data-trip="india">Más información</a>
+            </div>
+          </div>
+          <div class="viaje-card" data-destination="vietnam">
+            <iframe width="100%" src="https://www.youtube.com/embed/VIDEO_ID_FOR_VIETNAM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="viaje-card-content">
+              <h3>Explorando Vietnam</h3>
+              <p>Sumérgete en la belleza natural y la historia fascinante de Vietnam.</p>
+              <a href="#" class="cta-button more-info" data-trip="vietnam">Más información</a>
+            </div>
+          </div>
+          <div class="viaje-card" data-destination="azores">
+            <iframe width="100%" src="https://www.youtube.com/embed/VIDEO_ID_FOR_AZORES" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="viaje-card-content">
+              <h3>Aventura en las Azores</h3>
+              <p>Descubre la belleza natural y la tranquilidad de las islas Azores.</p>
+              <a href="#" class="cta-button more-info" data-trip="azores">Más información</a>
+            </div>
+          </div>
         </div>
       </section>
+
       <section id="nosotros" class="about-us">
         <h2 class="section-title">Sobre Nosotros</h2>
         <p>
