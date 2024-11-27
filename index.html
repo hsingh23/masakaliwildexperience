@@ -214,7 +214,7 @@
       .blog-post {
         background-color: #fff;
         border-radius: 15px;
-        overflow: hidden;
+        /* overflow: hidden; */
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease;
       }
@@ -406,7 +406,7 @@
     <script src="https://get.mavo.io/mavo.js"></script>
     <script src="https://web.celeritytechconsulting.com/form-wrapper.js" defer></script>
   </head>
-  <body mv-app="masakali" mv-storage="https://github.com/hsingh23/masakaliwildexperiences.com">
+  <body mv-app="masakali" class="mv-autoedit" mv-storage="https://github.com/hsingh23/masakaliwildexperiences.com" mv-plugins="tinymce" mv-bar="no-login">
     <header>
       <nav>
         <div class="logo">
@@ -491,8 +491,8 @@
       </section>
       <section id="blog">
         <h2 class="section-title">Blog</h2>
-        <div class="blog-posts" mv-multiple property="blogPosts">
-          <article class="blog-post">
+        <div class="blog-posts" mv-list>
+          <article class="blog-post" mv-list-item property="blogPosts" mv-item-bar>
             <img property="postImage" src="./flower.JPG" alt="" />
             <div class="blog-post-content">
               <h3 property="postTitle">Cómo los Viajes Pueden Cambiar tu Mentalidad</h3>
@@ -757,9 +757,21 @@
           modalTitle.textContent = tripInfo.title;
           modalDescription.textContent = tripInfo.description;
           modalCTA.textContent = tripInfo.cta;
-          modalCTA.href = `#book-${trip}`; // You can set this to an actual booking page
-
           modal.style.display = "block";
+
+          // Close modal when clicking the CTA button
+          modalCTA.addEventListener("click", () => {
+            const contactForm = document.querySelector(".contact-form");
+          if (contactForm) {
+            const subjectInput = contactForm.querySelector("[name='Message']");
+            if (subjectInput) {
+              subjectInput.value = `Reserva tu viaje a ${tripInfo.title}`;
+            }
+            // close the modal and scroll to the contact form
+            modal.style.display = "none";
+            contactForm.scrollIntoView({ behavior: "smooth" });
+          } 
+          });
         });
       });
 
