@@ -13,26 +13,18 @@
 	"aboutDescription": "\n          Creemos en el poder del viaje para transformar tanto los paisajes internos como externos. Nuestros viajes están diseñados para empujar tus límites mientras te redescubres\n          a ti mismo.\n        ",
 	"blogPosts": [
 		{
-			"postImage": [
-				"./flower.JPG",
-				"./india.JPG"
-			],
-			"postTitle": [
-				"Cómo los Viajes Pueden Cambiar tu Mentalidad",
-				"Usar el Viaje en Solitario para el Autodescubrimiento"
-			],
-			"postExcerpt": [
-				"Descubre cómo viajar puede transformar tu perspectiva y enriquecer tu vida.",
-				"Aprende cómo viajar solo puede ser una poderosa herramienta para el crecimiento personal."
-			],
-			"postContent": [
-				"\n                Los viajes nos exponen a nuevas culturas, ideas y experiencias que desafían nuestras percepciones preexistentes. Esta exposición nos ayuda a desarrollar una mentalidad más abierta y adaptable, permitiéndonos ver el mundo desde diferentes perspectivas.\n                Además, los desafíos que enfrentamos durante los viajes nos ayudan a desarrollar resiliencia y confianza en nosotros mismos. Aprendemos a navegar por situaciones desconocidas, lo que nos hace más flexibles y capaces de manejar la incertidumbre en nuestra vida cotidiana.\n                En última instancia, viajar nos enseña a apreciar la diversidad del mundo y a reconocer nuestra propia capacidad de crecimiento y adaptación. Estos cambios en nuestra mentalidad pueden tener un impacto duradero en cómo abordamos la vida y las relaciones con los demás.\n              ",
-				"\n                Viajar solo nos brinda la oportunidad única de enfrentarnos a nosotros mismos sin las distracciones de la vida cotidiana o las influencias de otros. Nos permite explorar nuestros propios pensamientos, deseos y miedos en un entorno nuevo y estimulante.\n                Durante un viaje en solitario, nos vemos obligados a tomar decisiones por nosotros mismos, lo que fomenta la independencia y la confianza en uno mismo. También nos da la libertad de seguir nuestros propios intereses y ritmo, lo que puede llevar a descubrimientos inesperados sobre nosotros mismos.\n                Además, viajar solo nos anima a interactuar más con los locales y otros viajeros, lo que puede ampliar nuestra perspectiva y ayudarnos a desarrollar habilidades sociales. Estas experiencias nos ayudan a crecer como individuos y a entender mejor quiénes somos y qué queremos en la vida.\n              "
-			],
-			"postDate": [
-				"Fecha",
-				"Fecha"
-			]
+			"postImage": "./flower.JPG",
+			"postTitle": "Cómo los Viajes Pueden Cambiar tu Mentalidad",
+			"postExcerpt": "Descubre cómo viajar puede transformar tu perspectiva y enriquecer tu vida.",
+			"postContent": "Los viajes nos exponen a nuevas culturas, ideas y experiencias que desafían nuestras percepciones preexistentes. Esta exposición nos ayuda a desarrollar una mentalidad más abierta y adaptable, permitiéndonos ver el mundo desde diferentes perspectivas.\nAdemás, los desafíos que enfrentamos durante los viajes nos ayudan a desarrollar resiliencia y confianza en nosotros mismos. Aprendemos a navegar por situaciones desconocidas, lo que nos hace más flexibles y capaces de manejar la incertidumbre en nuestra vida cotidiana.\nEn última instancia, viajar nos enseña a apreciar la diversidad del mundo y a reconocer nuestra propia capacidad de crecimiento y adaptación. Estos cambios en nuestra mentalidad pueden tener un impacto duradero en cómo abordamos la vida y las relaciones con los demás.",
+			"postDate": "Fecha"
+		},
+		{
+			"postImage": "./india.JPG",
+			"postTitle": "Usar el Viaje en Solitario para el Autodescubrimiento",
+			"postExcerpt": "Aprende cómo viajar solo puede ser una poderosa herramienta para el crecimiento personal.",
+			"postContent": "Viajar solo nos brinda la oportunidad única de enfrentarnos a nosotros mismos sin las distracciones de la vida cotidiana o las influencias de otros. Nos permite explorar nuestros propios pensamientos, deseos y miedos en un entorno nuevo y estimulante.\nDurante un viaje en solitario, nos vemos obligados a tomar decisiones por nosotros mismos, lo que fomenta la independencia y la confianza en uno mismo. También nos da la libertad de seguir nuestros propios intereses y ritmo, lo que puede llevar a descubrimientos inesperados sobre nosotros mismos.\nAdemás, viajar solo nos anima a interactuar más con los locales y otros viajeros, lo que puede ampliar nuestra perspectiva y ayudarnos a desarrollar habilidades sociales. Estas experiencias nos ayudan a crecer como individuos y a entender mejor quiénes somos y qué queremos en la vida.",
+			"postDate": "Fecha"
 		}
 	],
 	"workshopTitle": [
