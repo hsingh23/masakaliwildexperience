@@ -402,15 +402,17 @@
         cursor: pointer;
       }
     </style>
+    <link rel="stylesheet" href="https://get.mavo.io/mavo.css"/>
+    <script src="https://get.mavo.io/mavo.js"></script>
     <script src="https://web.celeritytechconsulting.com/form-wrapper.js" defer></script>
   </head>
-  <body>
+  <body mv-app="masakali" mv-storage="https://github.com/hsingh23/masakaliwildexperiences.com">
     <header>
       <nav>
         <div class="logo">
           <img src="./transparent_logo.png" alt="Masakali Logo" style="height: 80px; vertical-align: middle;">
           Masakali
-        </div></div>
+        </div>
         <ul class="nav-links">
           <li><a href="#viajes">Viajes</a></li>
           <li><a href="#nosotras">Nosotras</a></li>
@@ -428,8 +430,8 @@
     <main>
       <section class="hero">
         <div class="hero-content">
-          <h1>Viaja. Crece. Conecta.</h1>
-          <p>Aventuras para el Alma. Mochilear con Propósito.</p>
+          <h1 property="heroTitle">Viaja. Crece. Conecta.</h1>
+          <p property="heroSubtitle">Aventuras para el Alma. Mochilear con Propósito.</p>
           <a href="#viajes" class="cta-button">Explora nuestros viajes</a>
         </div>
       </section>
@@ -442,83 +444,37 @@
           <button class="filter-button" data-filter="bali">Bali</button>
           <button class="filter-button" data-filter="azores">Azores</button>
         </div>
-        <!-- <div class="viajes-grid">
-
-          <div class="viaje-card" data-destination="bali">
-            <video width="100%" controls>
-              <source src="./bali.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div class="viaje-card-content">
-              <h3>Mochilear en Bali & Retiro de Yoga</h3>
-              <p>Explora templos antiguos y practica mindfulness en playas paradisíacas.</p>
-              <a href="#" class="cta-button more-info" data-trip="bali">Más información</a>
-            </div>
-          </div>
-          <div class="viaje-card" data-destination="india">
-            <video controls width="100%">
-              <source src="./india.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div class="viaje-card-content">
-              <h3>Aventura Espiritual en India</h3>
-              <p>Descubre la riqueza cultural y espiritual de la India en un viaje transformador.</p>
-              <a href="#" class="cta-button more-info" data-trip="india">Más información</a>
-            </div>
-          </div>
-          <div class="viaje-card" data-destination="vietnam">
-            <video controls width="100%">
-              <source src="./vietnam.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div class="viaje-card-content">
-              <h3>Explorando Vietnam</h3>
-              <p>Sumérgete en la belleza natural y la historia fascinante de Vietnam.</p>
-              <a href="#" class="cta-button more-info" data-trip="vietnam">Más información</a>
-            </div>
-          </div>
-          <div class="viaje-card" data-destination="azores">
-            <video controls width="100%">
-              <source src="./azores.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <div class="viaje-card-content">
-              <h3>Aventura en las Azores</h3>
-              <p>Descubre la belleza natural y la tranquilidad de las islas Azores.</p>
-              <a href="#" class="cta-button more-info" data-trip="azores">Más información</a>
-            </div>
-          </div>
-        </div> -->
+        
         <div class="viajes-grid">
           <div class="viaje-card" data-destination="bali">
             <iframe width="100%" height="725" src="https://www.youtube.com/embed/8Q1SAStKePE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="viaje-card-content">
-              <h3>Mochilear en Bali & Retiro de Yoga</h3>
-              <p>Explora templos antiguos y practica mindfulness en playas paradisíacas.</p>
+              <h3 property="baliTitle">Mochilear en Bali & Retiro de Yoga</h3>
+              <p property="baliDescription">Explora templos antiguos y practica mindfulness en playas paradisíacas.</p>
               <a href="#" class="cta-button more-info" data-trip="bali">Más información</a>
             </div>
           </div>
           <div class="viaje-card" data-destination="india">
             <iframe width="100%" height="725" src="https://www.youtube.com/embed/UYiFv2rwldA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="viaje-card-content">
-              <h3>Aventura Espiritual en India</h3>
-              <p>Descubre la riqueza cultural y espiritual de la India en un viaje transformador.</p>
+              <h3 property="indiaTitle">Aventura Espiritual en India</h3>
+              <p property="indiaDescription">Descubre la riqueza cultural y espiritual de la India en un viaje transformador.</p>
               <a href="#" class="cta-button more-info" data-trip="india">Más información</a>
             </div>
           </div>
           <div class="viaje-card" data-destination="vietnam">
             <iframe width="100%" height="725" src="https://www.youtube.com/embed/iKmst1yJvis" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="viaje-card-content">
-              <h3>Explorando Vietnam</h3>
-              <p>Sumérgete en la belleza natural y la historia fascinante de Vietnam.</p>
+              <h3 property="vietnamTitle">Explorando Vietnam</h3>
+              <p property="vietnamDescription">Sumérgete en la belleza natural y la historia fascinante de Vietnam.</p>
               <a href="#" class="cta-button more-info" data-trip="vietnam">Más información</a>
             </div>
           </div>
           <div class="viaje-card" data-destination="azores">
             <iframe width="100%" height="725" src="https://www.youtube.com/embed/t8G7Fdt5vPg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="viaje-card-content">
-              <h3>Aventura en las Azores</h3>
-              <p>Descubre la belleza natural y la tranquilidad de las islas Azores.</p>
+              <h3 property="azoresTitle">Aventura en las Azores</h3>
+              <p property="azoresDescription">Descubre la belleza natural y la tranquilidad de las islas Azores.</p>
               <a href="#" class="cta-button more-info" data-trip="azores">Más información</a>
             </div>
           </div>
@@ -526,48 +482,170 @@
       </section>
 
       <section id="nosotras" class="about-us">
-        <h2 class="section-title">Sobre Nosotras</h2>
+        <h2 class="section-title" property="aboutTitle">Sobre Nosotras</h2>
         <img src="./cover.jpg" alt="Sobre Nosotras" style="width: 100%; height: auto; border-radius: 15px; margin-bottom: 2rem; max-width: 500px;">
-        <p>
+        <p property="aboutDescription">
           Creemos en el poder del viaje para transformar tanto los paisajes internos como externos. Nuestros viajes están diseñados para empujar tus límites mientras te redescubres
           a ti mismo.
         </p>
       </section>
       <section id="blog">
         <h2 class="section-title">Blog</h2>
-        <div class="blog-posts">
+        <div class="blog-posts" mv-multiple property="blogPosts">
           <article class="blog-post">
-            <img src="./flower.JPG" alt="Blog Post 1" />
+            <img property="postImage" src="./flower.JPG" alt="" />
             <div class="blog-post-content">
-              <h3>Cómo los Viajes Pueden Cambiar tu Mentalidad</h3>
-              <p>Descubre cómo viajar puede transformar tu perspectiva y enriquecer tu vida.</p>
-              <a href="#" class="cta-button read-more" data-post="post1">Leer más</a>
+              <h3 property="postTitle">Cómo los Viajes Pueden Cambiar tu Mentalidad</h3>
+              <p property="postExcerpt">Descubre cómo viajar puede transformar tu perspectiva y enriquecer tu vida.</p>
+              <p property="postContent">
+                Los viajes nos exponen a nuevas culturas, ideas y experiencias que desafían nuestras percepciones preexistentes. Esta exposición nos ayuda a desarrollar una mentalidad más abierta y adaptable, permitiéndonos ver el mundo desde diferentes perspectivas.
+                Además, los desafíos que enfrentamos durante los viajes nos ayudan a desarrollar resiliencia y confianza en nosotros mismos. Aprendemos a navegar por situaciones desconocidas, lo que nos hace más flexibles y capaces de manejar la incertidumbre en nuestra vida cotidiana.
+                En última instancia, viajar nos enseña a apreciar la diversidad del mundo y a reconocer nuestra propia capacidad de crecimiento y adaptación. Estos cambios en nuestra mentalidad pueden tener un impacto duradero en cómo abordamos la vida y las relaciones con los demás.
+              </p>
+              <p property="postDate">Fecha</p>
             </div>
           </article>
           <article class="blog-post">
-            <img src="./india.JPG" alt="Blog Post 2" />
+            <img property="postImage" src="./india.JPG" alt="" />
             <div class="blog-post-content">
-              <h3>Usar el Viaje en Solitario para el Autodescubrimiento</h3>
-              <p>Aprende cómo viajar solo puede ser una poderosa herramienta para el crecimiento personal.</p>
-              <a href="#" class="cta-button read-more" data-post="post2">Leer más</a>
+              <h3 property="postTitle">Usar el Viaje en Solitario para el Autodescubrimiento</h3>
+              <p property="postExcerpt">Aprende cómo viajar solo puede ser una poderosa herramienta para el crecimiento personal.</p>
+              <p property="postContent">
+                Viajar solo nos brinda la oportunidad única de enfrentarnos a nosotros mismos sin las distracciones de la vida cotidiana o las influencias de otros. Nos permite explorar nuestros propios pensamientos, deseos y miedos en un entorno nuevo y estimulante.
+                Durante un viaje en solitario, nos vemos obligados a tomar decisiones por nosotros mismos, lo que fomenta la independencia y la confianza en uno mismo. También nos da la libertad de seguir nuestros propios intereses y ritmo, lo que puede llevar a descubrimientos inesperados sobre nosotros mismos.
+                Además, viajar solo nos anima a interactuar más con los locales y otros viajeros, lo que puede ampliar nuestra perspectiva y ayudarnos a desarrollar habilidades sociales. Estas experiencias nos ayudan a crecer como individuos y a entender mejor quiénes somos y qué queremos en la vida.
+              </p>
+              <p property="postDate">Fecha</p>
             </div>
           </article>
         </div>
       </section>
 
+      <script>
+        class BlogPost extends HTMLElement {
+          constructor() {
+            super();
+            this.attachShadow({ mode: 'open' });
+          }
+
+          connectedCallback() {
+            const article = this.querySelector('article');
+            const image = article.querySelector('img');
+            const title = article.querySelector('h1,h2,h3,h4,h5,h6').textContent;
+            const summary = article.querySelector('p').textContent;
+            const fullContent = article.innerHTML;
+
+            this.shadowRoot.innerHTML = `
+              <style>
+                .blog-post {
+                  display: flex;
+                  flex-direction: column;
+                  margin-bottom: 2rem;
+                  border-radius: 10px;
+                  overflow: hidden;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+                .blog-post img {
+                  width: 100%;
+                  height: 200px;
+                  object-fit: cover;
+                }
+                .blog-post-content {
+                  padding: 1rem;
+                }
+                .cta-button {
+                  display: inline-block;
+                  padding: 0.5rem 1rem;
+                  background-color: #007bff;
+                  color: white;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  margin-top: 1rem;
+                }
+              </style>
+              <article class="blog-post">
+                <img src="${image.src}" alt="${image.alt}" />
+                <div class="blog-post-content">
+                  <h3>${title}</h3>
+                  <p>${summary}</p>
+                  <a href="#" class="cta-button read-more">Leer más</a>
+                </div>
+              </article>
+            `;
+
+            this.shadowRoot.querySelector('.read-more').addEventListener('click', (e) => {
+              e.preventDefault();
+              this.openModal(title, fullContent);
+            });
+          }
+
+          openModal(title, content) {
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.8);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 1000;
+            `;
+
+            const modalContent = document.createElement('div');
+            modalContent.style.cssText = `
+              background-color: white;
+              padding: 2rem;
+              border-radius: 10px;
+              max-width: 800px;
+              max-height: 80%;
+              overflow-y: auto;
+            `;
+            modalContent.innerHTML = `
+              <h2>${title}</h2>
+              ${content}
+              <button style="margin-top: 1rem; padding: 0.5rem 1rem;">Cerrar</button>
+            `;
+
+            // Ensure the image in the modal is styled nicely
+            const modalImage = modalContent.querySelector('img');
+            if (modalImage) {
+              modalImage.style.cssText = `
+                max-width: 500px;
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+              `;
+            }
+
+            modal.appendChild(modalContent);
+            document.body.appendChild(modal);
+
+            modalContent.querySelector('button').addEventListener('click', () => {
+              document.body.removeChild(modal);
+            });
+          }
+        }
+
+        customElements.define('blog-post', BlogPost);
+      </script>
+
       <section id="talleres" style="display: none">
         <h2 class="section-title">Talleres y Cursos</h2>
         <div class="workshops-list">
           <div class="workshop-card">
-            <h3>Mindfulness y Yoga en Bali</h3>
-            <p>Fecha: 15-22 de Julio, 2024</p>
-            <p>Ubicación: Bali, Indonesia</p>
+            <h3 property="workshopTitle">Mindfulness y Yoga en Bali</h3>
+            <p property="workshopDescription">Fecha: 15-22 de Julio, 2024</p>
+            <p property="workshopLocation">Ubicación: Bali, Indonesia</p>
             <a href="#" class="cta-button">Inscribirse</a>
           </div>
           <div class="workshop-card">
-            <h3>Establecimiento de Metas para Mochileros</h3>
-            <p>Fecha: 5 de Agosto, 2024</p>
-            <p>Ubicación: Online</p>
+            <h3 property="workshopTitle">Establecimiento de Metas para Mochileros</h3>
+            <p property="workshopDescription">Fecha: 5 de Agosto, 2024</p>
+            <p property="workshopLocation">Ubicación: Online</p>
             <a href="#" class="cta-button">Inscribirse</a>
           </div>
         </div>
