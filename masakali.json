@@ -1,31 +1,39 @@
 {
-	"heroTitle": "Viaja. Crece. Conecta.",
-	"heroSubtitle": "Aventuras para el Alma. Mochilear con Propósito.",
-	"baliTitle": "Mochilear en Bali & Retiro de Yoga",
-	"baliDescription": "Explora templos antiguos y practica mindfulness en playas paradisíacas.",
-	"indiaTitle": "Aventura Espiritual en India",
-	"indiaDescription": "Descubre la riqueza cultural y espiritual de la India en un viaje transformador...",
-	"vietnamTitle": "Explorando Vietnam",
-	"vietnamDescription": "Sumérgete en la belleza natural y la historia fascinante de Vietnam.",
-	"azoresTitle": "Aventura en las Azores",
-	"azoresDescription": "Descubre la belleza natural y la tranquilidad de las islas Azores.",
+	"heroTitle": "Viajes mochileros",
+	"heroSubtitle": "Viaja. Crece. Conecta\nAventuras para el Alma\nMochilear con Propósito",
+	"baliTitle": "Viaje a Bali & Retiro de Yoga Julio 2025",
+	"baliDescription": "Del 19 al 31 de Julio tendrá lugar nuestro viaje al paraíso. Los cinco primeros días estaremos en Canggu, una de las zonas más conocidas de Bali. Serenity es un centro de yoga con cuatro salas donde tienen lugar clases simultáneas, además cuenta con jardín, piscina, zona chill, zona de trabajo y restaurante. Disfrutaremos también de su delicioso desayuno vegano conocido en toda la ciudad. La segunda parte del viaje nos iremos de visita a los lugares más bonitos de Bali y alrededores: Ubud, Sidemen, Amed y Gili island.\n",
+	"indiaTitle": "Viaje y retiro en India Marzo 2025",
+	"indiaDescription": "Del 20 al 30 de Marzo estaremos en Rishikesh, capital mundial del yoga y puerta del Himalaya. Pasaremos diez días en un Ashram a orillas del río Ganges, donde practicaremos actividades como yoga, meditación, breath work, baño de sonido, entre otros. Al mismo tiempo haremos visitas y excursiones a lugares emblemáticos como templos, cascadas, mercados, etc.",
+	"vietnamTitle": "Descubre Vietnam y su belleza Agosto 2025",
+	"vietnamDescription": "Del 18 al 28 de Agosto partiremos a Vietnam. Empezaremos en Hanoi, una de nuestras ciudades favoritas del mundo. Disfrutaremos de su ambiente y movimiento, su historia y sus tradiciones. Después comenzaremos nuestra ruta por los lugares más impresionantes en cuestión de naturaleza: Ha Long Bay, Ninh Binh y Sapa. Finalmente volveremos a Hanoi donde disfrutar del Night Market, lleno de sorpresas.",
+	"azoresTitle": "Aventura en las Azores Abril 2025",
+	"azoresDescription": "Del 18 al 26 de Abril. Descubre la belleza natural y la tranquilidad de las islas Azores. Estaremos en Sao Miguel, la principal isla de Azores. Pasaremos los días visitando paisajes espectaculares, al mismo tiempo que conectamos con las prácticas de yoga. ¿Alguna vez has visto delfines y ballenas de cerca? Vente para descubrirlo.",
 	"aboutTitle": "Sobre Nosotras",
-	"aboutDescription": "\n          Creemos en el poder del viaje para transformar tanto los paisajes internos como externos. Nuestros viajes están diseñados para empujar tus límites mientras te redescubres\n          a ti mismo.\n        ",
+	"aboutDescription": "Somos Maria y Verónica, y juntas formamos Masakali Wild Experience. Desde muy jóvenes hemos buscado aventuras y explorado recorriéndonos el mundo. Viajar ha sido nuestra manera de descubrirnos, conocernos y reinventarnos. Y lo sigue siendo.\n\nNos conocimos profundamente en India, donde iniciamos este proyecto a partir de nuestra propia experiencia. Cansadas de viajar solas decidimos acompañar a otras personas. Sentimos que lo que hacemos nutre, cambia y transforma. Nuestros viajes son inmersivos, pues no concebimos el viaje sin adentrarnos de lleno en la cultura. Además, la transformación incrementa gracias a actividades de desarrollo personal que implementamos en el viaje. A través del yoga, el juego, la danza, los círculos y asambleas hacemos del viaje un lugar seguro donde cada persona derribe sus barreras y se muestre tal y cómo es. Este escenario donde el cuidado y el sostén son los motores de cambio, nos permite crear una comunidad fuerte y consistente. Una TRIBU donde descansar y confiar en la humanidad.\n\nEn definitiva, creemos en el poder del viaje para transformar tanto los paisajes internos como externos. Nuestros viajes están diseñados para empujar tus límites mientras te redescubres a ti mismo. Después de un viaje como éste no volverás a ser la misma persona.\n\n¿Te unes a nuestra Comunidad Masakali?",
 	"blogPosts": [
 		{
-			"postImage": "./flower.JPG",
-			"postTitle": "Cómo los Viajes Pueden Cambiar tu Mentalidad",
+			"postImage": "https://masakaliwildexperience.com/images/1733312196085.jpg",
+			"postTitle": "Cómo los viajes pueden cambiar tu mentalidad",
 			"postExcerpt": "Descubre cómo viajar puede transformar tu perspectiva y enriquecer tu vida.",
 			"postContent": "Los viajes nos exponen a nuevas culturas, ideas y experiencias que desafían nuestras percepciones preexistentes. Esta exposición nos ayuda a desarrollar una mentalidad más abierta y adaptable, permitiéndonos ver el mundo desde diferentes perspectivas.\nAdemás, los desafíos que enfrentamos durante los viajes nos ayudan a desarrollar resiliencia y confianza en nosotros mismos. Aprendemos a navegar por situaciones desconocidas, lo que nos hace más flexibles y capaces de manejar la incertidumbre en nuestra vida cotidiana.\nEn última instancia, viajar nos enseña a apreciar la diversidad del mundo y a reconocer nuestra propia capacidad de crecimiento y adaptación. Estos cambios en nuestra mentalidad pueden tener un impacto duradero en cómo abordamos la vida y las relaciones con los demás.",
 			"postDate": "Fecha"
 		},
 		{
-			"postImage": "./india.JPG",
-			"postTitle": "Usar el Viaje en Solitario para el Autodescubrimiento",
+			"postImage": "https://masakaliwildexperience.com/images/1733312425683.jpg",
+			"postTitle": "Usar el viaje en solitario para el descubrimiento",
 			"postExcerpt": "Aprende cómo viajar solo puede ser una poderosa herramienta para el crecimiento personal.",
 			"postContent": "Viajar solo nos brinda la oportunidad única de enfrentarnos a nosotros mismos sin las distracciones de la vida cotidiana o las influencias de otros. Nos permite explorar nuestros propios pensamientos, deseos y miedos en un entorno nuevo y estimulante.\nDurante un viaje en solitario, nos vemos obligados a tomar decisiones por nosotros mismos, lo que fomenta la independencia y la confianza en uno mismo. También nos da la libertad de seguir nuestros propios intereses y ritmo, lo que puede llevar a descubrimientos inesperados sobre nosotros mismos.\nAdemás, viajar solo nos anima a interactuar más con los locales y otros viajeros, lo que puede ampliar nuestra perspectiva y ayudarnos a desarrollar habilidades sociales. Estas experiencias nos ayudan a crecer como individuos y a entender mejor quiénes somos y qué queremos en la vida.",
 			"postDate": "Fecha"
-		}
+		},
+		{
+			"postImage": "https://masakaliwildexperience.com/images/1733312234009.jpg",
+			"postTitle": "El viaje en grupo te lleva más lejos. Viaja \"solo\" en compañía.",
+			"postContent": "Viajar sola te pone enfrente todos tus miedos y obstáculos, saca toda la fuerza que hay dentro de ti para superarte. Pero viajar en grupo, con personas que no conoces, tiene algo muy especial. Guarda lo complejo de viajar sola sin nadie de tu entorno más cercano, por lo cual te obliga a adaptarte a la nueva situación y gestionar emocionalmente todas esas emociones que vayan surgiendo. Pero la diferencia principal de viajar en grupo es que dos factores añadidos entran en la ecuación. Por una parte, puede que al principio te sientas incómodo o extraño al viajar con personas que no conoces, lo cual se convierte en un reto. Lo más sorprendente de todo es que en apenas un par de días ya se empiezan a forjar amistades, pues un día de viaje equivale a una semana normal en la cotidianeidad. A los cinco días ya tienes la sensación de que esos que eran desconocidos son tus amigos. A los siete pasan a ser familia. Y a los diez días se convierten en tu TRIBU. La tribu se elige y sentir que tienes un entorno que te cuida, te sostiene, te acepta y te ama tal y cómo eres es una de las grandes búsquedas del ser humano."
+		},
+		{},
+		{},
+		{}
 	],
 	"workshopTitle": [
 		"Mindfulness y Yoga en Bali",
